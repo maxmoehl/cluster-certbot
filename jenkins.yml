@@ -4,6 +4,7 @@ spec:
   containers:
     - name: buildah
       image: localhost:30500/buildah:latest
+      imagePullPolicy: Always
       securityContext:
         privileged: true
       command:
